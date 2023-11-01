@@ -34,10 +34,9 @@ false;
 
 # Front-end:
 <details>
-• Para cada API do back-end deve ser criada uma respectiva função no front-end que usará a
+- Para cada API do back-end deve ser criada uma respectiva função no front-end que usará a
 API
-
-• Deverá haver controle de sessão de usuário logado.
+- Deverá haver controle de sessão de usuário logado.
 </details>
 
 # Back-end:
