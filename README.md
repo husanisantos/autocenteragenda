@@ -2,9 +2,11 @@
 
 O aluno deverá implementar um conjunto de APIs e interface gráfica para realizar o CRUD referente a duas tabelas que se relacionam do tipo 1:N cuja escolha do módulo ficará a cargo do
 grupo. O grupo poderá escolher qualquer tema que deseje implementar.
+
 Não poderá ser utilizada a tabela do módulo financeiro feita no trabalho anterior.
-Todas as tabelas deverão ter pelo menos os campos ID, Removido, um campo do tipo texto,
-um campo do tipo data e um campo do tipo decimal.
+
+Todas as tabelas deverão ter pelo menos os campos ID, Removido, um campo do tipo texto, um campo do tipo data e um campo do tipo decimal.
+
 Uma das tabelas obrigatoriamente deverá ter uma chave estrangeira referenciando a outra tabela.
   
 # Regras de negócio
