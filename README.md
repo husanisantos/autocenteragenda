@@ -47,12 +47,14 @@ O grupo perderá a pontuação normaliza indicada na questão.
 
 | Aspecto                               | Pontuação |
 | ------------------------------------ | --------- |
-| Criar as 05 APIs no back-end          | 10,0      |
-| Criar as 05 funções no front-end      | 06,0      |
+| Criar as 05 APIs para cada tabela no back-end de acordo com as orientações
+definidas na seção regras de negócio.         | 10,0      |
+| Criar as 05 funções para cada tabela no front-end referentes as APIs.      | 06,0      |
 | Criar a tela de login                 | 04,0      |
 | Criar controle de sessão              | 02,0      |
 | Implementar mecanismo de segurança JWT | 04,0      |
 | Criar repositório no GitHub           | 07,0      |
+
 ### Sobre o Seminário
 
 - Apresentação até 15 minutos.
