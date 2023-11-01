@@ -17,18 +17,18 @@ anteriores e vistas em sala de aula.
 
 As operações deverão ser realizadas no formato de APIs e são:
 
-• GetAllXXX: retorna todos os campos da tabela. Vai trazer somente os registros que não
+• **GetAllXXX**: retorna todos os campos da tabela. Vai trazer somente os registros que não
 foram apagados, isto é, aqueles cujo campo removido seja igual a false;
 
-• GetXXXByID: retorna todos os campos da tabela de acordo com o ID informado. Vai trazer
+• **GetXXXByID**: retorna todos os campos da tabela de acordo com o ID informado. Vai trazer
 somente o registro que não foi apagado, isto é, aquele cujo campo removido seja igual a
 false;
 
-• InsertXXX: insere um novo registro na tabela;
+• **InsertXXX**: insere um novo registro na tabela;
 
-• UpdateXXX: atualiza um registro na tabela de acordo com o ID informado;
+• **UpdateXXX**: atualiza um registro na tabela de acordo com o ID informado;
 
-• DeleteXXX: efetua um soft delete e um registro na tabela de acordo com o ID informado. O registro não é apagado fisicamente, apenas o campo removido é passado para true.
+• **DeleteXXX**: efetua um soft delete e um registro na tabela de acordo com o ID informado. O registro não é apagado fisicamente, apenas o campo removido é passado para true.
 
 No front-end:
 • Para cada API do back-end deve ser criada uma respectiva função no front-end que usará a
