@@ -33,11 +33,12 @@ false;
 
 
 # Front-end:
+<details>
 • Para cada API do back-end deve ser criada uma respectiva função no front-end que usará a
 API
 
 • Deverá haver controle de sessão de usuário logado.
-
+</details>
 # Avaliação do Trabalho
 
 O grupo perderá a pontuação normaliza indicada na questão.
