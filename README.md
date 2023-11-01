@@ -1,4 +1,4 @@
-<img src="imagem logo.png" alt="Imagem Logo" style="width: 100%;">
+<img src="https://raw.githubusercontent.com/husanisantos/images/logo.png)" alt="Imagem Logo" style="width: 100%;">
 
 ## Estudo de caso
 
