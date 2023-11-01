@@ -1,4 +1,4 @@
-<img src="https://raw.githubusercontent.com/husanisantos/autocenteragenda/main/images/logo.png" alt="Imagem Logo" style="width: 50%;">
+<p align="center"><img src="https://raw.githubusercontent.com/husanisantos/autocenteragenda/main/images/logo.png" alt="Imagem Logo" style="width: 40%;"></p>
 
 ## Estudo de caso
 
