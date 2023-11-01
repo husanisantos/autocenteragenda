@@ -30,7 +30,8 @@ false;
 
 • **DeleteXXX**: efetua um soft delete e um registro na tabela de acordo com o ID informado. O registro não é apagado fisicamente, apenas o campo removido é passado para true.
 
-No front-end:
+
+# Front-end:
 • Para cada API do back-end deve ser criada uma respectiva função no front-end que usará a
 API.
 • Deverá haver controle de sessão de usuário logado.
@@ -38,7 +39,7 @@ API.
 O grupo perderá a pontuação normaliza indicada na questão.
 
 - (5,0 pontos) Não postar o link do repositório remoto no Moodle.
-- 
+
 ### Sobre o Software
 
 | Aspecto                               | Pontuação |
