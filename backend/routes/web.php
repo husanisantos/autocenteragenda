@@ -2,6 +2,9 @@
 
 /** @var \Laravel\Lumen\Routing\Router $router */
 
+use App\Http\Middleware\CorsMiddleware;
+use Illuminate\Support\Facades\Route;
+
 /*
 |--------------------------------------------------------------------------
 | Application Routes
@@ -13,6 +16,24 @@
 |
 */
 
-$router->get('/', function () use ($router) {
-    return $router->app->version();
+
+Route::group([
+
+    'middleware' => CorsMiddleware::class,
+    'prefix'    => '/api/v1'
+
+], function () {
+
+    Route::group(['prefix' => '/auth'], function () {
+        Route::post('login', 'AuthController@login');
+        Route::post('logout', 'AuthController@logout');
+        Route::post('check', 'AuthController@check');
+    });
+
+    // ROUTES WITH AUTH
+    Route::group(['middleware' => 'auth:api'], function () {
+        
+        Route::post('/auth/refresh', 'AuthController@refresh');
+
+    });
 });
