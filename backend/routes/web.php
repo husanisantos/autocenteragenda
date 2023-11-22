@@ -20,7 +20,6 @@ use Illuminate\Support\Facades\Route;
 Route::group([
 
     'middleware' => CorsMiddleware::class,
-    'prefix'    => '/api/v1'
 
 ], function () {
 
@@ -28,12 +27,37 @@ Route::group([
         Route::post('login', 'AuthController@login');
         Route::post('logout', 'AuthController@logout');
         Route::post('check', 'AuthController@check');
+        Route::post('refresh', 'AuthController@refresh');
     });
 
-    // ROUTES WITH AUTH
     Route::group(['middleware' => 'auth:api'], function () {
         
-        Route::post('/auth/refresh', 'AuthController@refresh');
+        /**
+         * Rotas para CRUD de serviços 
+         * @return Void
+         */
+        Route::group(['prefix' => 'services'], function () {
 
+            Route::get('/', 'ServiceController@getAll');
+            Route::get('/{id}', 'ServiceController@getById');
+            Route::put('/{id}', 'ServiceController@update');
+            Route::post('/', 'ServiceController@insert');
+            Route::delete('/{id}', 'ServiceController@delete');
+            
+        });
+
+        /**
+         * Rotas para CRUD de veículos 
+         * @return Void
+         */
+        Route::group(['prefix' => 'vehicles'], function () {
+
+            Route::get('/', 'VehicleController@getAll');
+            Route::get('/{id}', 'VehicleController@getById');
+            Route::put('/{id}', 'VehicleController@update');
+            Route::post('/', 'VehicleController@insert');
+            Route::delete('/{id}', 'VehicleController@delete');
+            
+        });
     });
 });

@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\User;
-use Illuminate\Http\Request; 
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 use Laravel\Lumen\Routing\Controller as BaseController;
 
@@ -26,7 +26,7 @@ class AuthController extends BaseController
      */
     public function login()
     {
-        $credentials = request(['email', 'password']);
+        $credentials = request(['username', 'password']);
         if (! $token = auth()->attempt($credentials)) {
             return response()->json([
                 'error' => 'Credenciais inválidas, acesso ao sistema não permitido.'

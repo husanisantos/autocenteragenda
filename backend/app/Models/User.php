@@ -20,7 +20,14 @@ class User extends Model implements AuthenticatableContract, AuthorizableContrac
      * @var string[]
      */
     protected $fillable = [
-        'name', 'email',
+        'fullname',
+        'username', 
+        'password',
+        'role',
+        'avatar',
+        'email',
+        'phone',
+        'deleted'
     ];
 
     /**
@@ -31,6 +38,17 @@ class User extends Model implements AuthenticatableContract, AuthorizableContrac
     protected $hidden = [
         'password',
     ];
+
+
+    /**
+     * Mutator para formatar o campo 'phone' para salvar apenas números
+     *
+     * @return void
+     */
+     public function setPhoneAttribute($value)
+     {
+         $this->attributes['phone'] = preg_replace('/[^0-9]/', '', $value);
+     }
 
      /**
      * Get the identifier that will be stored in the subject claim of the JWT.
